@@ -1,0 +1,17 @@
+package com.example.samuraitravel.service;
+
+import com.example.samuraitravel.repository.HouseRepository;
+import com.example.samuraitravel.repository.ReviewRepository;
+import com.example.samuraitravel.repository.UserRepository;
+
+public class FavoriteService {
+	
+	private final FavoriteRepository favoriteRepository;
+	private final HouseRepository houseRepository;
+	private final UserRepository userRepository;
+	
+	public FavoriteService() {
+		
+	}
+
+}

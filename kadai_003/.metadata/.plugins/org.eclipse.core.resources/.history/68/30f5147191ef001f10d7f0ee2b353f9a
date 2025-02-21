@@ -1,0 +1,13 @@
+package com.example.samuraitravel.repository;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.samuraitravel.entity.Review;
+import com.example.samuraitravel.entity.favorite;
+
+public interface FavoriteRepository extends JpaRepository<favorite, Integer>{
+	public Page<Review> findByIdOrderByCreatedAtDesc(Integer id, Pageable pageable );
+
+}
