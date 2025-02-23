@@ -8,7 +8,7 @@ import com.example.samuraitravel.entity.Favorite;
 
 public interface FavoriteRepository extends JpaRepository<Favorite, Integer>{
 	public Page<Favorite> findByUserIdOrderByCreatedAtDesc(Integer useId, Pageable pageable );
-	public Favorite findByHouseIdAndUserId(Integer houseId);
+	
 		
 	}
 

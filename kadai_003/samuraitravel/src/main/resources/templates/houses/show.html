@@ -26,13 +26,18 @@
 								<li class="breadcrumb-item"><a th:href="@{/}">ホーム</a></li>
 								<li class="breadcrumb-item"><a th:href="@{/houses}">民宿一覧</a></li>
 								<li class="breadcrumb-item active" aria-current="page">民宿詳細</li>
+								
+								<span sec:authorize="isAuthenticated()" class="nav-link col-xxl-9">
+									<a th:if="${#lists.isEmpty(favorite.getId())}" method="post" th:action="@{/houses/__${house.getId()}__/favorites/newFavorite}" th:object="${favoriteForm}" >お気に入りに登録</a>
+									<a th:unless="${#lists.isEmpty(favorite.getId())}" method="post" th:action="@{/houses/__${house.getId()}__/favorites/deleteFavorite}">お気に入りを削除</a>
+								</span>
+								
+								
+							
+								
 							</ol>
 
-							<form th:action="@{/houses/{houseId}/favorites/newFavorite(houseId=${house.id})}"
-								method="post" th:if="${#authentication.principal}">
-								<button type="submit"
-									th:text="${favorite != null ? 'お気に入りを削除する' : 'お気に入り追加する'}"></button>
-							</form>
+							
 						</nav>
 
 						<h1 class="mb-4 text-center" th:text="${house.getName()}"></h1>

@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.samuraitravel.entity.Favorite;
-import com.example.samuraitravel.entity.House;
 import com.example.samuraitravel.entity.User;
 import com.example.samuraitravel.form.FavoriteForm;
 import com.example.samuraitravel.repository.FavoriteRepository;
@@ -77,18 +77,15 @@ public class FavoriteController {
 		return "houses/show";
 	}
 	
-	@PostMapping("/houses/{houseId}/favorites/{favoriteId}deleteFavorite")
+	@PostMapping("/houses/{houseId}/favorites/deleteFavorite")
 	public String deleteFavorite(@PathVariable(name = "houseId") Integer houseId,
-			                    @PathVariable(name = "favoriteId") Integer favoriteId ,
+			                     @RequestParam("favoriteId") Integer favoriteId ,Favorite favorite,
 			                    Model model,RedirectAttributes redirectAttributes) {
 		
-		House house = houseRepository.getReferenceById(houseId);
-		Favorite favorite = favoriteRepository.getReferenceById(favoriteId);
-		favoriteRepository.deleteById(favoriteId);
+	
+		favoriteRepository.deleteById(favorite.getId());
 		
-		model.addAttribute("houses", house);
-		model.addAttribute("favorites", favorite);
-		
+	
 		return "houses/show";
 	}
 	

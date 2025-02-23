@@ -1,0 +1,97 @@
+
+
+package com.example.samuraitravel.controller;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.example.samuraitravel.entity.Favorite;
+import com.example.samuraitravel.entity.House;
+import com.example.samuraitravel.entity.User;
+import com.example.samuraitravel.form.FavoriteForm;
+import com.example.samuraitravel.repository.FavoriteRepository;
+import com.example.samuraitravel.repository.HouseRepository;
+import com.example.samuraitravel.security.UserDetailsImpl;
+
+@Controller
+public class FavoriteController {
+
+	
+	private FavoriteRepository favoriteRepository;
+	private HouseRepository houseRepository;
+	
+	
+	
+	public FavoriteController(FavoriteRepository favoriteRepository,HouseRepository houseRepository) {
+		
+		
+		this.favoriteRepository = favoriteRepository; 
+		this.houseRepository =houseRepository;
+		
+	}
+	
+	@GetMapping("/favorites")
+	public String index(@PageableDefault(page = 0, size = 10, sort = "createdAt") Pageable pageable  ,
+			            @AuthenticationPrincipal UserDetailsImpl userDetailsImpl,
+			            
+			            Model model) {
+		
+		
+		User user = userDetailsImpl.getUser();
+		
+		
+		
+		Page<Favorite> favoriteList =favoriteRepository.findByUserIdOrderByCreatedAtDesc(user.getId(), pageable);
+		
+	
+		
+		model.addAttribute("favoriteList",favoriteList);
+		
+		return "/favorites/index";
+		
+	}
+	
+	@PostMapping("/houses/{houseId}/favorites/newFavorite")
+	public String newFavorite(@PathVariable(name = "houseId") Integer houseId,
+			@AuthenticationPrincipal UserDetailsImpl userDetailsImpl,
+			@ModelAttribute @Validated FavoriteForm favoriteForm,Model model) {
+		
+		favoriteForm.setHouseId(houseId);
+		
+		User user = userDetailsImpl.getUser();
+		Integer userId = user.getId();
+		
+		favoriteForm.setUserId(userId);
+		
+		
+		return "houses/show";
+	}
+	
+	@PostMapping("/houses/{houseId}/favorites/{favoriteId}deleteFavorite")
+	public String deleteFavorite(@PathVariable(name = "houseId") Integer houseId,
+			                    @PathVariable(name = "favoriteId") Integer favoriteId ,
+			                    Model model,RedirectAttributes redirectAttributes) {
+		
+		House house = houseRepository.getReferenceById(houseId);
+		Favorite favorite = favoriteRepository.getReferenceById(favoriteId);
+		favoriteRepository.deleteById(favoriteId);
+		
+		model.addAttribute("houses", house);
+		model.addAttribute("favorites", favorite);
+		
+		return "houses/show";
+	}
+	
+	
+}
+
