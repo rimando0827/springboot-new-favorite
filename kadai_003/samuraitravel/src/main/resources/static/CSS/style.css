@@ -127,6 +127,19 @@ footer {
 	color: yellow;
 }
 
+.btn-link {
+    color: #ff5733; /* 好みの色に変更 */
+    text-decoration: none;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 1400px) {
  .samuraitravel-container {
    max-width: 1200px;

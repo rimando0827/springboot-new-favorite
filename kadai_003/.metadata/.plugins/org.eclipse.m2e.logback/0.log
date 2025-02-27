@@ -463,3 +463,46 @@
 2025-02-24 00:54:37,583 [Worker-68: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-02-24 00:54:37,590 [Worker-68: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-24 00:54:37,592 [Worker-68: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-24 00:56:45,224 [Worker-71: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-24 00:56:45,230 [Worker-71: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-24 00:56:45,233 [Worker-71: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 15:34:16,781 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-02-27 21:52:12,929 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 2 resources from src\main\resources to target\classes
+2025-02-27 21:52:12,949 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 41 resources from src\main\resources to target\classes
+2025-02-27 21:52:12,976 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 21:53:03,221 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 21:53:03,228 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 21:53:03,231 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 21:53:19,654 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 21:53:19,661 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 21:53:19,665 [Worker-60: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 21:53:26,795 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 21:53:26,803 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 21:53:26,806 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 21:54:18,190 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 21:54:18,197 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 21:54:18,201 [Worker-58: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:03:25,645 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:03:25,652 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:03:25,656 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:03:59,395 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:03:59,403 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:03:59,406 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:04:34,724 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:04:34,731 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:04:34,735 [Worker-56: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:06:41,584 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:06:41,592 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:06:41,595 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:08:03,839 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:08:03,845 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:08:03,848 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:08:10,176 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:08:10,183 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:08:10,185 [Worker-57: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:08:24,249 [Worker-62: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:08:24,256 [Worker-62: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:08:24,259 [Worker-62: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
+2025-02-27 22:08:56,504 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-02-27 22:08:56,510 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-27 22:08:56,513 [Worker-50: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\kadai_003\kadai_003\samuraitravel\src\test\resources
