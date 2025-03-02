@@ -17,4 +17,5 @@
     <fullyQualifiedTypeName name="org.springframework.security.core.annotation.AuthenticationPrincipal"/>
     <fullyQualifiedTypeName name="org.apache.el.stream.Optional"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="com.example.samuraitravel.service.FavoriteService"/>
 </qualifiedTypeNameHistroy>

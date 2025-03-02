@@ -28,8 +28,15 @@
 								<li class="breadcrumb-item"><a th:href="@{/houses}">民宿一覧</a></li>
 								<li class="breadcrumb-item active" aria-current="page">民宿詳細</li>
 
-								<span sec:authorize="isAuthenticated()" class="nav-link col-xxl-9">
-									<div>
+								
+
+
+								
+
+							</ol>
+							
+							<div sec:authorize="isAuthenticated()" >
+									
 										<!-- お気に入りに登録 -->
 										<form th:if="${!isFavorite}"
 											th:action="@{/houses/__${house.getId()}__/favorites/newFavorite}"
@@ -43,18 +50,8 @@
 											method="post" style="display:inline;">
 											<button type="submit" class="btn btn-link">&#9829;お気に入りを削除</button>
 										</form>
-									</div>
-								</span>
-
-
-								<!--
-									<span sec:authorize="isAuthenticated()"
-									th:if="${#authentication.principal.user.id == review.user.id}">
-									<a th:href="@{/houses/__${house.id}__/reviews/__${review.id}__/edit}"
-										class="me-2">編集</a>
-										-->
-
-							</ol>
+									
+								</div>
 
 
 						</nav>

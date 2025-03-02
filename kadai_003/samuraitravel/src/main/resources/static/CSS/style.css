@@ -128,7 +128,7 @@ footer {
 }
 
 .btn-link {
-    color: #ff5733; /* 好みの色に変更 */
+    color: #5196a6; /* 好みの色に変更 */
     text-decoration: none;
     padding: 0;
     border: none;
@@ -137,7 +137,8 @@ footer {
 }
 
 .btn-link:hover {
-    text-decoration: underline;
+	color: #407784;
+    
 }
 
 @media screen and (min-width: 1400px) {
